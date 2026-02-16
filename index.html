@@ -168,6 +168,8 @@
                 <legend>3. Referências e Observações</legend>
                 <label>Sites que você gostaria de se inspirar:</label>
                 <textarea id="referencias" placeholder="Cole os links aqui..."></textarea>
+                <label>Observações que gostaria de fazer:</label>
+                <textarea id="observacoes" placeholder="Escreva aqui..."></textarea>
             </fieldset>
 
             <button type="submit">
@@ -190,6 +192,7 @@
             const insta = document.getElementById('instagram').value;
             const cta = document.getElementById('cta').value;
             const refs = document.getElementById('referencias').value;
+            const obs = document.getElementById('observacoes').value;
 
             // Monta a mensagem formatada para o WhatsApp
             const mensagem = `Olá, Davi! Preenchi o formulário:%0A%0A` +
@@ -202,7 +205,8 @@
                 `*Nicho:* ${nicho}%0A` +
                 `*Instagram:* ${insta}%0A` +
                 `*CTA:* ${cta}%0A` +
-                `*Referências:* ${refs}%0A%0A` + 
+                `*Referências:* ${refs}` + 
+                `*Observações:* ${obs}%0A%0A` + 
                 `*OBS:* _Enviar imagens para o email thesallesofficial@gmail.com_`;
                 
 
